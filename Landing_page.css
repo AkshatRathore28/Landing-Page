@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+#main{
+    min-height: 100vh; 
+    width: 100%;
+}
+#top{ 
+    min-height: 60vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1677346414290-d337cbc682a6?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size:cover;
+    background-position: center;
+}
+#bottom{
+    display: flex;
+    min-height: 40vh;
+    width: 100%;
+    background-color: blue;
+}
+#b_one{
+    width: 25%;
+    min-height:inherit;
+    background-color: #fff;
+    padding: 30px;
+}
+#b_one h3{
+    font-size: 25px;
+}
+#b_one p{
+    font-size: 17px;
+    margin-top: 20px;
+}
+#b_two{
+    width: 25%;
+    min-height:inherit;
+    background-image: url(https://in.nothing.tech/cdn/shop/files/2_8b886501-e2de-4860-834a-6f57952ee0e8_1292x.jpg?v=1657563157);
+    background-size: cover;
+    background-position: center;
+}
+#b_three{
+    width: 20%;
+    min-height:inherit;
+    background-color:aqua;
+}
+#b_three_top{
+    width: 100%;
+    min-height: 20vh;
+    background-color: orangered;
+    color: #fff;
+    padding: 20px;
+}
+#b_three_top p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+#b_three_top h3{
+    font-size: 20px;
+}
+#b_three_bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://in.nothing.tech/cdn/shop/files/4_7b8e9816-5f53-41bd-ae77-5e0f5722d49a_1292x.jpg?v=1657563157);
+    background-size: cover;
+    background-position: center;
+}
+#b_four{
+    width: 30%;
+    min-height:inherit;
+    background-color:#444;    
+    color: #fff;
+    padding: 30px;
+}
+#b_four h3{
+    font-size: 25px;
+}
+.b_four_div{
+    display: flex;
+    margin: 40px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.b_four_div #photo_1{
+    width:40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+}
+.b_four_div #photo_2{
+    width:40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+}
+.b_four_div p{
+    width: 84%;
+    font-size:15px;
+}
+#overlay{
+    position: relative;
+    min-height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.167);
+}
+#text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10vw;
+    color: #fff;
+}
+#text h1{
+    font-size: 4vw;
+    font-weight: 500;
+}
+#text_right{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+#text_right p{
+    font-size: 17px;
+    width: 40%;
+}
+#text_right i{
+    color: #fff;
+    font-size: 20px;
+}
+@media(max-width:500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: -30px 0px;
+    }
+    
+    #text h1{
+        font-size: 7vw;
+    }
+    #overlay #text #text_right{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #overlay #text #text_right p{
+        width: initial;
+        margin-top: 20px;
+    }
+
+    #overlay #text #text_right #icons{
+        margin-top: 30px;
+    }
+
+    #bottom{
+        flex-direction: column;
+        min-height: 40vh;
+    }
+    #b_one{
+        width:100%;        
+        min-height: inherit;
+    }
+    #b_one h3{
+        margin-top: 50px;
+    }
+    #b_two{
+        width:100%;
+        min-height: inherit;
+        background-size: cover;
+        background-position: center;
+    }
+    #b_three{
+        width:100%;
+        min-height: 30vh;
+    }
+    #b_three_top{
+        min-height: inherit;
+    }
+    #b_three_top h3{
+        margin-top: 40px;
+    }
+    #b_three_bottom{
+        min-height: inherit;
+        background-size: cover;
+        background-position: center;
+    }
+    #b_four{
+        width:100%;
+    }
+}
